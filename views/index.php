@@ -1,7 +1,5 @@
 <?php
 
-//eren
-
 require_once '../sm.php';
 require_once '../tweet.php';
 
