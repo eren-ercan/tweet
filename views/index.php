@@ -18,7 +18,7 @@ Welcome <a href="../controllers/logout.php">Logout</a><br>
 <ul>
     <?php
         foreach($tweet->get() as $t){
-            echo '<li>'.$t['tweet'].' '.date('d-m-Y h:i:s',intval($t['time']/1000)).'</li><a href="../controllers/tweet.php?type=delete&tweetId='.$t['id'].'">Delete</a>';
+            echo '<li>'.$t['tweet'].' '.date('d-m-Y h:i:s',intval($t['time']/1000 + 7200 )).'</li><a href="../controllers/tweet.php?type=delete&tweetId='.$t['id'].'">Delete</a>';
         }
     ?>
 </ul>
