@@ -7,7 +7,7 @@ if(!array_key_exists('email',$_POST) && !array_key_exists('pass',$_POST))
 
 $db = new DB();
 
-$result = $db->read('select id from users where email="'.$_POST['email'].'" and pass="'.$_POST['pass'].'"');
+$result = $db->read('SELECT id FROM users WHERE email="'.$_POST['email'].'" and pass="'.$_POST['pass'].'"');
 
 if(count($result) !== 1){
     header('Location:../views/login.php');

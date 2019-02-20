@@ -13,7 +13,7 @@ class Tweet{
 
     function add($tweet){
         $this->db->write(
-            'insert into tweets 
+            'INSERT INTO tweets 
             (userId,time,tweet) 
             values 
             ("'.$this->userId.'","'.round(microtime(true) * 1000).'","'.$tweet.'")'
@@ -22,12 +22,12 @@ class Tweet{
 
     function delete($tweetId){
         $this->db->write(
-            'delete from tweets where userId="'.$this->userId.'" and id="'.$tweetId.'"'
+            'DELETE FROM tweets WHERE userId="'.$this->userId.'" and id="'.$tweetId.'"'
         );
     }
 
     function get():array{
-        return $this->db->read('select * from tweets where userId="'.$this->userId.'" order by time desc');
+        return $this->db->read('SELECT * FROM tweets WHERE userId="'.$this->userId.'" order by time desc');
     }
 
 }

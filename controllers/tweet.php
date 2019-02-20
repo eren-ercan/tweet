@@ -20,7 +20,7 @@ switch($_GET['type']){
         $tweetContent = $_POST['tweet'];
 
         if(mb_strlen($tweetContent) > 280)
-            die('error');
+            die('Max character 280!');
 
         $tweet->add($_POST['tweet']);
         break;

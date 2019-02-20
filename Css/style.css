@@ -1,0 +1,84 @@
+
+#menu{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#menu li {
+    float: left ;
+    width: 150 px;
+    position: relative;
+    
+}
+
+#menu a {
+
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #00CCFF;
+    display: block;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-left: 10px;
+    border: 1px solid #00CCFF;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 2px;
+    word-spacing: 1px;
+   
+    
+
+
+}
+
+
+#menu a:hover {
+
+    background-color: #0099FF;
+
+}
+
+.send-button {
+    background-color: #00CCFF; 
+    border: none;
+    color: white;
+    padding:4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 2px 1px;
+    cursor: pointer;
+  }
+  .send-button  {
+    background-color: white; 
+    color: 00CCFF; 
+    border: 2px solid #00CCFF;
+  }
+  .send-button:hover {
+    background-color: #00CCFF;
+    color: white;
+  }
+
+  li.tweetlist {
+        list-style-type: none;
+        
+        
+  }
+  ul#tweet{
+    padding-left: 0;
+    
+  }
+
+  a#tdelete{
+    font-size: 16px;
+    color: #00CCFF;
+  }
+
+  li.tweetlist {
+
+     
+  }

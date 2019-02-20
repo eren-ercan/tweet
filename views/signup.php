@@ -5,7 +5,7 @@ if(SM::isLoggedIn()){
     die();
 }
 ?>
-<h3>Sign In</h3><hr><br>
+<h3>Sign Up</h3><hr><br>
 <form method="post" action="../controllers/signup.php">
 <input type="text" name="email" placeholder="email">
 <input type="password" name="pass" placeholder="pass">

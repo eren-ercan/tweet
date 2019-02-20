@@ -13,9 +13,8 @@ class DB {
 
     function write($query){
         return mysqli_query(
-            $this->conn,
-            $query
-        ) or die(mysqli_error($this->conn));
+            $this->conn,$query
+            )or die(mysqli_error($this->conn));
     }
 
     function read($query):array{
